@@ -57,3 +57,9 @@ target_link_libraries(MyApp Qt5::Widgets Qt5::Qml Qt5::Quick)
 add_executable (untittest_myapp ${untittest_myapp_SOURCES})
 target_link_libraries(untittest_myapp gtest)
 add_test (UnitTest bin/untittest_myapp)
+
+#Install targets
+install(TARGETS MyApp DESTINATION bin)
+foreach(_include_file ${MyApp_INCLUDE_DIRS})
+  install(DIRECTORY ${_include_file} DESTINATION include)
+endforeach()
