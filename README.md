@@ -1,0 +1,1 @@
+C++ Project template with external_dependecies (Qt and Gtest), unittest folder and documentation created with Doxygen.
