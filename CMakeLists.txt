@@ -11,6 +11,7 @@ set(CMAKE_AUTORCC ON)
 set(QT_USE_QTGUI TRUE)
 set(QT_USE_QTXML TRUE)
 set(EXTERNAL_PROJECT_DIR "$ENV{HOME}/Documents/Codes/3rdparty")
+set(EXECUTABLE_OUTPUT_PATH "${CMAKE_BINARY_DIR}/bin/")
 
 #find packages
 find_package(Doxygen)
